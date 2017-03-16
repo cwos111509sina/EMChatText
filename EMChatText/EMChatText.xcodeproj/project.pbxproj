@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F10F21E1E7A1BA000638482 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10F21D1E7A1BA000638482 /* main.m */; };
+		9F10F2211E7A1BA000638482 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10F2201E7A1BA000638482 /* AppDelegate.m */; };
+		9F10F2241E7A1BA000638482 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10F2231E7A1BA000638482 /* ViewController.m */; };
+		9F10F2291E7A1BA000638482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F10F2281E7A1BA000638482 /* Assets.xcassets */; };
+		9F10F22C1E7A1BA000638482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F10F22A1E7A1BA000638482 /* LaunchScreen.storyboard */; };
+		9F10F2371E7A1BA000638482 /* EMChatTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10F2361E7A1BA000638482 /* EMChatTextTests.m */; };
+		9F10F2421E7A1BA000638482 /* EMChatTextUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10F2411E7A1BA000638482 /* EMChatTextUITests.m */; };
+		9F10F2541E7A1C8800638482 /* ChatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10F2511E7A1C8800638482 /* ChatVC.m */; };
+		9F10F2551E7A1C8800638482 /* LoginAndRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10F2531E7A1C8800638482 /* LoginAndRegisterView.m */; };
+		9F10F2591E7A1CA800638482 /* Hyphenate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F10F2581E7A1CA800638482 /* Hyphenate.framework */; };
+		9F10F25B1E7A1CAB00638482 /* Hyphenate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F10F2581E7A1CA800638482 /* Hyphenate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F10F2331E7A1BA000638482 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F10F2111E7A1BA000638482 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F10F2181E7A1BA000638482;
+			remoteInfo = EMChatText;
+		};
+		9F10F23E1E7A1BA000638482 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F10F2111E7A1BA000638482 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F10F2181E7A1BA000638482;
+			remoteInfo = EMChatText;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9F10F25C1E7A1CAB00638482 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9F10F25B1E7A1CAB00638482 /* Hyphenate.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9F10F2191E7A1BA000638482 /* EMChatText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMChatText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F10F21D1E7A1BA000638482 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F10F21F1E7A1BA000638482 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F10F2201E7A1BA000638482 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9F10F2221E7A1BA000638482 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9F10F2231E7A1BA000638482 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9F10F2281E7A1BA000638482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F10F22B1E7A1BA000638482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F10F22D1E7A1BA000638482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F10F2321E7A1BA000638482 /* EMChatTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMChatTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F10F2361E7A1BA000638482 /* EMChatTextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMChatTextTests.m; sourceTree = "<group>"; };
+		9F10F2381E7A1BA000638482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F10F23D1E7A1BA000638482 /* EMChatTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMChatTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F10F2411E7A1BA000638482 /* EMChatTextUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMChatTextUITests.m; sourceTree = "<group>"; };
+		9F10F2431E7A1BA000638482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F10F24F1E7A1C0B00638482 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9F10F2501E7A1C8800638482 /* ChatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatVC.h; sourceTree = "<group>"; };
+		9F10F2511E7A1C8800638482 /* ChatVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatVC.m; sourceTree = "<group>"; };
+		9F10F2521E7A1C8800638482 /* LoginAndRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAndRegisterView.h; sourceTree = "<group>"; };
+		9F10F2531E7A1C8800638482 /* LoginAndRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAndRegisterView.m; sourceTree = "<group>"; };
+		9F10F2581E7A1CA800638482 /* Hyphenate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hyphenate.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F10F2161E7A1BA000638482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F10F2591E7A1CA800638482 /* Hyphenate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F10F22F1E7A1BA000638482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F10F23A1E7A1BA000638482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F10F2101E7A1BA000638482 = {
+			isa = PBXGroup;
+			children = (
+				9F10F21B1E7A1BA000638482 /* EMChatText */,
+				9F10F2351E7A1BA000638482 /* EMChatTextTests */,
+				9F10F2401E7A1BA000638482 /* EMChatTextUITests */,
+				9F10F21A1E7A1BA000638482 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F10F21A1E7A1BA000638482 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F10F2191E7A1BA000638482 /* EMChatText.app */,
+				9F10F2321E7A1BA000638482 /* EMChatTextTests.xctest */,
+				9F10F23D1E7A1BA000638482 /* EMChatTextUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F10F21B1E7A1BA000638482 /* EMChatText */ = {
+			isa = PBXGroup;
+			children = (
+				9F10F2561E7A1CA800638482 /* ThirdSDK */,
+				9F10F21F1E7A1BA000638482 /* AppDelegate.h */,
+				9F10F2201E7A1BA000638482 /* AppDelegate.m */,
+				9F10F2221E7A1BA000638482 /* ViewController.h */,
+				9F10F2231E7A1BA000638482 /* ViewController.m */,
+				9F10F2501E7A1C8800638482 /* ChatVC.h */,
+				9F10F2511E7A1C8800638482 /* ChatVC.m */,
+				9F10F2521E7A1C8800638482 /* LoginAndRegisterView.h */,
+				9F10F2531E7A1C8800638482 /* LoginAndRegisterView.m */,
+				9F10F21C1E7A1BA000638482 /* Supporting Files */,
+			);
+			path = EMChatText;
+			sourceTree = "<group>";
+		};
+		9F10F21C1E7A1BA000638482 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F10F24F1E7A1C0B00638482 /* PrefixHeader.pch */,
+				9F10F2281E7A1BA000638482 /* Assets.xcassets */,
+				9F10F22A1E7A1BA000638482 /* LaunchScreen.storyboard */,
+				9F10F22D1E7A1BA000638482 /* Info.plist */,
+				9F10F21D1E7A1BA000638482 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F10F2351E7A1BA000638482 /* EMChatTextTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F10F2361E7A1BA000638482 /* EMChatTextTests.m */,
+				9F10F2381E7A1BA000638482 /* Info.plist */,
+			);
+			path = EMChatTextTests;
+			sourceTree = "<group>";
+		};
+		9F10F2401E7A1BA000638482 /* EMChatTextUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F10F2411E7A1BA000638482 /* EMChatTextUITests.m */,
+				9F10F2431E7A1BA000638482 /* Info.plist */,
+			);
+			path = EMChatTextUITests;
+			sourceTree = "<group>";
+		};
+		9F10F2561E7A1CA800638482 /* ThirdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9F10F2571E7A1CA800638482 /* HyphenateFullSDK */,
+			);
+			path = ThirdSDK;
+			sourceTree = "<group>";
+		};
+		9F10F2571E7A1CA800638482 /* HyphenateFullSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9F10F2581E7A1CA800638482 /* Hyphenate.framework */,
+			);
+			path = HyphenateFullSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F10F2181E7A1BA000638482 /* EMChatText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F10F2461E7A1BA000638482 /* Build configuration list for PBXNativeTarget "EMChatText" */;
+			buildPhases = (
+				9F10F2151E7A1BA000638482 /* Sources */,
+				9F10F2161E7A1BA000638482 /* Frameworks */,
+				9F10F2171E7A1BA000638482 /* Resources */,
+				9F10F25C1E7A1CAB00638482 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMChatText;
+			productName = EMChatText;
+			productReference = 9F10F2191E7A1BA000638482 /* EMChatText.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F10F2311E7A1BA000638482 /* EMChatTextTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F10F2491E7A1BA000638482 /* Build configuration list for PBXNativeTarget "EMChatTextTests" */;
+			buildPhases = (
+				9F10F22E1E7A1BA000638482 /* Sources */,
+				9F10F22F1E7A1BA000638482 /* Frameworks */,
+				9F10F2301E7A1BA000638482 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F10F2341E7A1BA000638482 /* PBXTargetDependency */,
+			);
+			name = EMChatTextTests;
+			productName = EMChatTextTests;
+			productReference = 9F10F2321E7A1BA000638482 /* EMChatTextTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F10F23C1E7A1BA000638482 /* EMChatTextUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F10F24C1E7A1BA000638482 /* Build configuration list for PBXNativeTarget "EMChatTextUITests" */;
+			buildPhases = (
+				9F10F2391E7A1BA000638482 /* Sources */,
+				9F10F23A1E7A1BA000638482 /* Frameworks */,
+				9F10F23B1E7A1BA000638482 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F10F23F1E7A1BA000638482 /* PBXTargetDependency */,
+			);
+			name = EMChatTextUITests;
+			productName = EMChatTextUITests;
+			productReference = 9F10F23D1E7A1BA000638482 /* EMChatTextUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F10F2111E7A1BA000638482 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = zzjd;
+				TargetAttributes = {
+					9F10F2181E7A1BA000638482 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U45T94XCHR;
+						ProvisioningStyle = Automatic;
+					};
+					9F10F2311E7A1BA000638482 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9F10F2181E7A1BA000638482;
+					};
+					9F10F23C1E7A1BA000638482 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9F10F2181E7A1BA000638482;
+					};
+				};
+			};
+			buildConfigurationList = 9F10F2141E7A1BA000638482 /* Build configuration list for PBXProject "EMChatText" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F10F2101E7A1BA000638482;
+			productRefGroup = 9F10F21A1E7A1BA000638482 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F10F2181E7A1BA000638482 /* EMChatText */,
+				9F10F2311E7A1BA000638482 /* EMChatTextTests */,
+				9F10F23C1E7A1BA000638482 /* EMChatTextUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F10F2171E7A1BA000638482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F10F22C1E7A1BA000638482 /* LaunchScreen.storyboard in Resources */,
+				9F10F2291E7A1BA000638482 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F10F2301E7A1BA000638482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F10F23B1E7A1BA000638482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F10F2151E7A1BA000638482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F10F2551E7A1C8800638482 /* LoginAndRegisterView.m in Sources */,
+				9F10F2541E7A1C8800638482 /* ChatVC.m in Sources */,
+				9F10F2241E7A1BA000638482 /* ViewController.m in Sources */,
+				9F10F2211E7A1BA000638482 /* AppDelegate.m in Sources */,
+				9F10F21E1E7A1BA000638482 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F10F22E1E7A1BA000638482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F10F2371E7A1BA000638482 /* EMChatTextTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F10F2391E7A1BA000638482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F10F2421E7A1BA000638482 /* EMChatTextUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F10F2341E7A1BA000638482 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F10F2181E7A1BA000638482 /* EMChatText */;
+			targetProxy = 9F10F2331E7A1BA000638482 /* PBXContainerItemProxy */;
+		};
+		9F10F23F1E7A1BA000638482 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F10F2181E7A1BA000638482 /* EMChatText */;
+			targetProxy = 9F10F23E1E7A1BA000638482 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F10F22A1E7A1BA000638482 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F10F22B1E7A1BA000638482 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F10F2441E7A1BA000638482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9F10F2451E7A1BA000638482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F10F2471E7A1BA000638482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U45T94XCHR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EMChatText/ThirdSDK/HyphenateFullSDK",
+				);
+				GCC_PREFIX_HEADER = $SRCROOT/EMChatText/PrefixHeader.pch;
+				INFOPLIST_FILE = EMChatText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.text.EMChatText;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9F10F2481E7A1BA000638482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U45T94XCHR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EMChatText/ThirdSDK/HyphenateFullSDK",
+				);
+				GCC_PREFIX_HEADER = $SRCROOT/EMChatText/PrefixHeader.pch;
+				INFOPLIST_FILE = EMChatText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.text.EMChatText;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9F10F24A1E7A1BA000638482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EMChatTextTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.text.EMChatTextTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EMChatText.app/EMChatText";
+			};
+			name = Debug;
+		};
+		9F10F24B1E7A1BA000638482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EMChatTextTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.text.EMChatTextTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EMChatText.app/EMChatText";
+			};
+			name = Release;
+		};
+		9F10F24D1E7A1BA000638482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EMChatTextUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.text.EMChatTextUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EMChatText;
+			};
+			name = Debug;
+		};
+		9F10F24E1E7A1BA000638482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EMChatTextUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.text.EMChatTextUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EMChatText;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F10F2141E7A1BA000638482 /* Build configuration list for PBXProject "EMChatText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F10F2441E7A1BA000638482 /* Debug */,
+				9F10F2451E7A1BA000638482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F10F2461E7A1BA000638482 /* Build configuration list for PBXNativeTarget "EMChatText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F10F2471E7A1BA000638482 /* Debug */,
+				9F10F2481E7A1BA000638482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9F10F2491E7A1BA000638482 /* Build configuration list for PBXNativeTarget "EMChatTextTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F10F24A1E7A1BA000638482 /* Debug */,
+				9F10F24B1E7A1BA000638482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9F10F24C1E7A1BA000638482 /* Build configuration list for PBXNativeTarget "EMChatTextUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F10F24D1E7A1BA000638482 /* Debug */,
+				9F10F24E1E7A1BA000638482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F10F2111E7A1BA000638482 /* Project object */;
+}

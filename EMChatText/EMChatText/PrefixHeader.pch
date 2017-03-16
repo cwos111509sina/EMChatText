@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  EMChatText
+//
+//  Created by zzjd on 2017/3/14.
+//  Copyright © 2017年 zzjd. All rights reserved.
+//
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+/*
+ 账号1:
+    aaaaa111 
+    aaaaa111
+ 
+ 
+ 账号2:
+    aaaaa1111
+    aaaaa1111
+ 
+ */
+
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+
+
+#import <Hyphenate/Hyphenate.h>
+
+
+
+
+#endif /* PrefixHeader_pch */
