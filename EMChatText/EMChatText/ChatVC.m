@@ -340,7 +340,7 @@
     if ([btn.titleLabel.text isEqualToString:@"语音"]) {//语音
         [self sendMessage:@"吾里草莓君·语音"];
     }else{//视频
-//        [self sendMessage:@"吾里草莓君·视频"];
+        [self sendMessage:@"吾里草莓君·视频"];
     }
 }
 

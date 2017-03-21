@@ -113,6 +113,9 @@
         [self.view addSubview:_callSession.localVideoView];
         
     }
+    [self.view bringSubviewToFront:_receiveBtn];
+    [self.view bringSubviewToFront:_hangupBtn];
+    
 }
 
 /*!
