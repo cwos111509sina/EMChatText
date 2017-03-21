@@ -8,7 +8,10 @@
 
 #import "ChatVC.h"
 
-@interface ChatVC ()<EMChatManagerDelegate,UITableViewDelegate,UITableViewDataSource>
+#import "ConversationVC.h"
+
+
+@interface ChatVC ()<EMChatManagerDelegate,UITableViewDelegate,UITableViewDataSource,EMCallManagerDelegate>
 
 @property (nonatomic,strong)UITextView *textView;
 
@@ -19,6 +22,13 @@
 
 @property (nonatomic,strong)EMConversation * conversation;
 
+@property (nonatomic,strong)UIView * addView;
+
+@property (nonatomic,strong)ConversationVC * converVC;
+
+
+@property (nonatomic,strong)NSMutableDictionary * chatDict;
+
 
 @end
 
@@ -27,6 +37,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _chatDict = [[NSMutableDictionary alloc]init];;
+    
     _conversation = [[EMClient sharedClient].chatManager getConversation:([[[EMClient sharedClient] currentUsername] isEqualToString:@"aaaaa111"])?@"aaaaa1111":@"aaaaa111" type:EMConversationTypeChat createIfNotExist:YES];
     
     //移除消息回调
@@ -34,6 +46,8 @@
     
     //注册消息回调
     [[EMClient sharedClient].chatManager addDelegate:self delegateQueue:nil];
+    
+    [[EMClient sharedClient].callManager addDelegate:self delegateQueue:nil];
     
     _dataArray = [[NSMutableArray alloc]init];
     
@@ -177,7 +191,7 @@
     EMMessage * message = _dataArray[indexPath.row];
     EMTextMessageBody *textBody = (EMTextMessageBody *)message.body;
     
-    NSLog(@"消息内容 textBody.text = %@ ，indexPath = %ld",textBody.text,indexPath.row);
+    NSLog(@"消息内容 textBody.text = %@ ，indexPath = %ld",textBody.text,(long)indexPath.row);
     
     
     
@@ -212,7 +226,9 @@
 
             [_dataArray addObject:message];
             dispatch_async(dispatch_get_main_queue(), ^{
+                
                 [_tableView reloadData];
+                
             });
         }
         
@@ -223,8 +239,12 @@
 
 -(void)sendBtnClick{
     
+    [self sendMessage:_textView.text];
+}
+-(void)sendMessage:(NSString *)msg{
+    
     //发送内容
-    EMTextMessageBody *body = [[EMTextMessageBody alloc] initWithText:_textView.text];
+    EMTextMessageBody *body = [[EMTextMessageBody alloc] initWithText:msg];
     NSString *from = [[EMClient sharedClient] currentUsername];
     
     //生成Message
@@ -241,7 +261,22 @@
             _textView.text = @"";
             
             dispatch_async(dispatch_get_main_queue(), ^{
+                if ([msg isEqualToString:@"吾里草莓君·语音"]) {
+                    self.converVC.isSender = YES;
+
+                    [self presentViewController:self.converVC animated:YES completion:nil];
+                    
+                }else if([msg isEqualToString:@"吾里草莓君·视频"]){//视频
+                    
+                    self.converVC.type = 1;
+                    self.converVC.isSender = YES;
+
+                    [self presentViewController:self.converVC animated:YES completion:nil];
+                    
+                }
+                
                 [_tableView reloadData];
+                
             });
             
         }else{
@@ -249,13 +284,66 @@
         }
         
     }];
-    
+
 }
-#pragma mark ---------------------------------------更多功能按钮------------------
+
+#pragma mark ---------------------------------------更多功能按钮（语音、视频）------------------
 
 -(void)addBtnClick{
+    [_textView endEditing:YES];
+
+    _editView.frame = CGRectMake(0, HEIGHT-110, WIDTH, 50);
+    
+    if (!_addView) {
+        _addView = [[UIView alloc]initWithFrame:CGRectMake(0, HEIGHT-60, WIDTH, 60)];
+        
+        _addView.backgroundColor = [UIColor whiteColor];
+        
+        NSArray * arr = @[@"语音",@"视频"];
+        
+        for (int i = 0; i<arr.count; i++) {
+            
+            UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+            
+            button.frame = CGRectMake(WIDTH/2*i, 0, WIDTH/2, 60);
+            
+            button.backgroundColor = [UIColor blueColor];
+            
+            [button setTitle:arr[i] forState:UIControlStateNormal];
+            
+            [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+            
+            
+            [_addView addSubview:button];
+            
+        }
+        
+        [self.view addSubview:_addView];
+        
+    }else{
+        _addView.hidden = !_addView.isHidden;
+
+        if (_addView.isHidden){
+            _editView.frame = CGRectMake(0, HEIGHT-50, WIDTH, 50);
+        }
+        
+    }
+    
     
 }
+
+-(void)buttonClick:(UIButton *)btn{
+    _addView.hidden = !_addView.isHidden;
+    if (_addView.isHidden){
+        _editView.frame = CGRectMake(0, HEIGHT-50, WIDTH, 50);
+    }
+    if ([btn.titleLabel.text isEqualToString:@"语音"]) {//语音
+        [self sendMessage:@"吾里草莓君·语音"];
+    }else{//视频
+//        [self sendMessage:@"吾里草莓君·视频"];
+    }
+}
+
 
 #pragma mark ---------------------------------------返回------------------
 -(void)backBtnClick{
@@ -269,7 +357,10 @@
 -(void)tapClick{
     
     [_textView endEditing:YES];
-    
+    _addView.hidden = YES;
+    if (_addView.isHidden){
+        _editView.frame = CGRectMake(0, HEIGHT-50, WIDTH, 50);
+    }
 }
 #pragma mark 键盘出现监听事件
 
@@ -290,6 +381,41 @@
     _editView.frame = CGRectMake(0, HEIGHT-50, WIDTH, 50);
     
     _tableView.frame = CGRectMake(0,64, WIDTH, HEIGHT-114);
+}
+
+
+-(ConversationVC *)converVC{
+    
+    if (!_converVC) {
+        _converVC = [[ConversationVC alloc]init];
+    }
+    return _converVC;
+}
+
+
+/*!
+ *  \~chinese
+ *  用户A拨打用户B，用户B会收到这个回调
+ *
+ *  @param aSession  会话实例
+ *
+ */
+- (void)callDidReceive:(EMCallSession *)aSession{
+    NSLog(@"callDidReceive 用户A拨打用户B，用户B会收到这个回调");
+    
+    self.converVC.callSession = aSession;
+
+    if (!aSession.type) {
+        self.converVC.isSender = NO;
+        [self presentViewController:self.converVC animated:YES completion:nil];
+        
+    }else{//视频
+        self.converVC.type = 1;
+        self.converVC.isSender = NO;
+        [self presentViewController:self.converVC animated:YES completion:nil];
+        
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {

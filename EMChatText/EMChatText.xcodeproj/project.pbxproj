@@ -18,6 +18,7 @@
 		9F10F2551E7A1C8800638482 /* LoginAndRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F10F2531E7A1C8800638482 /* LoginAndRegisterView.m */; };
 		9F10F2591E7A1CA800638482 /* Hyphenate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F10F2581E7A1CA800638482 /* Hyphenate.framework */; };
 		9F10F25B1E7A1CAB00638482 /* Hyphenate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F10F2581E7A1CA800638482 /* Hyphenate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F6A9FA61E80BBBA003AE7CD /* ConversationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6A9FA51E80BBBA003AE7CD /* ConversationVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		9F10F2521E7A1C8800638482 /* LoginAndRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAndRegisterView.h; sourceTree = "<group>"; };
 		9F10F2531E7A1C8800638482 /* LoginAndRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAndRegisterView.m; sourceTree = "<group>"; };
 		9F10F2581E7A1CA800638482 /* Hyphenate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hyphenate.framework; sourceTree = "<group>"; };
+		9F6A9FA41E80BBBA003AE7CD /* ConversationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationVC.h; sourceTree = "<group>"; };
+		9F6A9FA51E80BBBA003AE7CD /* ConversationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				9F10F2231E7A1BA000638482 /* ViewController.m */,
 				9F10F2501E7A1C8800638482 /* ChatVC.h */,
 				9F10F2511E7A1C8800638482 /* ChatVC.m */,
+				9F6A9FA41E80BBBA003AE7CD /* ConversationVC.h */,
+				9F6A9FA51E80BBBA003AE7CD /* ConversationVC.m */,
 				9F10F2521E7A1C8800638482 /* LoginAndRegisterView.h */,
 				9F10F2531E7A1C8800638482 /* LoginAndRegisterView.m */,
 				9F10F21C1E7A1BA000638482 /* Supporting Files */,
@@ -323,6 +328,7 @@
 				9F10F2241E7A1BA000638482 /* ViewController.m in Sources */,
 				9F10F2211E7A1BA000638482 /* AppDelegate.m in Sources */,
 				9F10F21E1E7A1BA000638482 /* main.m in Sources */,
+				9F6A9FA61E80BBBA003AE7CD /* ConversationVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +564,7 @@
 				9F10F2481E7A1BA000638482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F10F2491E7A1BA000638482 /* Build configuration list for PBXNativeTarget "EMChatTextTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +573,7 @@
 				9F10F24B1E7A1BA000638482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F10F24C1E7A1BA000638482 /* Build configuration list for PBXNativeTarget "EMChatTextUITests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +582,7 @@
 				9F10F24E1E7A1BA000638482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

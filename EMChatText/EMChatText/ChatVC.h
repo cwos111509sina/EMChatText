@@ -10,5 +10,4 @@
 
 @interface ChatVC : UIViewController
 
-
 @end
